@@ -6,7 +6,8 @@ public class LlenoLeo {
 
     //se leen por teclado los datos del array y se muestran los pares
 public static void main(String[] args) {
-    int[] lista= new int[10];
+    final int MAXIMO=10;
+    int[] lista= new int[MAXIMO];
     Scanner sc=new Scanner(System.in);
     boolean error;
     System.out.println("introduzca 10 números sin decimales");
