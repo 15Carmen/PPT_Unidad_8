@@ -8,11 +8,20 @@ public class LlenoLeo {
 public static void main(String[] args) {
     int[] lista= new int[10];
     Scanner sc=new Scanner(System.in);
-    int teclado=0;
-
+    boolean error;
+    System.out.println("introduzca 10 números sin decimales");
     for (int i=0;i< lista.length;i++){
-        System.out.println("introduzca el valor "+ i);
-        lista[i]=sc.nextInt();
+        error=true;
+        while (error) {
+            try {
+                System.out.println("introduzca el valor " + i);
+                lista[i] = sc.nextInt();
+                error = false;
+            } catch (Exception e) {
+                System.out.println("ha de introducir números enteros");
+                sc.nextLine();
+            }
+        }
     }
 
     for (int i=0; i< lista.length;i++){
