@@ -1,18 +1,27 @@
 package AumentoArray;
 
+/**
+ * Clase de ejemplo para mostrar cómo se puede aumentar la dimensión de un array
+ * En este ejemplo se crea un array de dimensiom 3 y se aumenta su dimensión en 5 más (CANT)
+ */
 public class ArrayMayor {
 public static void main(String[]args) {
 
+    final int CANT = 5;
     int[] ant = {1, 2, 3 };
+
+
     System.out.println("muestro el array original");
-    int cant = 3;
     imprimo (ant);
+
     System.out.println();
-    //voy a aumentar el array en 3 y llamo a una funcion
-    ant= aumentaIntArray(ant,cant);
+    //voy a aumentar el array en 5 y llamo a una funcion
+    ant= aumentaIntArray(ant,CANT);
     ant[3]=8;
     ant[4]=9;
     ant[5]=10;
+    ant[6]=56;
+    ant[7]=69;
     System.out.println("muestro el array aumentado");
     imprimo (ant);
 }
@@ -37,6 +46,5 @@ public static void main(String[]args) {
 
 
         }
-
 
 }

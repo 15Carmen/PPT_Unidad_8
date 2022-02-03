@@ -15,6 +15,7 @@ public class PruebaRectangulos {
 // Usar el array.
 // Para calcular y mostrar el área de los rectángulos por ejemplo
         for (int i = 0; i < rectangulos.length; i++) {
+            System.out.print(rectangulos[i].toString());
             System.out.println(rectangulos[i].calcularArea());
 
         }
